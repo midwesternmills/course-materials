@@ -1,0 +1,93 @@
+---
+title: "R Workshop Cont"
+author: "STAT 20 UC Berkeley"
+output:
+  xaringan::moon_reader:
+    css: stat20.css
+    lib_dir: assets/libs
+    seal: false
+    nature:
+      highlightStyle: atelier-forest-light
+      highlightLines: true
+      highlightSpans: true
+      ratio: 16:9
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(message = FALSE,
+                      warning = FALSE,
+                      echo = FALSE,
+                      fig.align = "center",
+                      fig.retina = 3)
+
+library(tidyverse)
+library(xaringanthemer)
+source("https://raw.githubusercontent.com/stat20/course-materials/master/assets/stat20-style.r")
+```
+
+class: center, middle
+
+# Lab2: Arbuthnot
+### Introduction to Probability and Statistics
+
+Please log in to `stat20.datahub.berkeley.edu` and open `arbuthnot.pdf` in a browser tab for reference.
+
+---
+
+## Dr Arbuthnot
+
+--
+
+Dr. John Arbuuthnot was a polymath who lived in London. He was interested in the ratio of newborn boys to newborn girls so he set out to gather data.
+
+--
+
+Where and How do you think he may have gathered this data? What would you expect about this data?
+
+---
+
+## GGplot and Graphics
+
+--
+
+ggplot is a package that helps to create graphs in R. (It is part of the `tidyverse` package, like `dplyr.) 
+
+--
+
+`ggplot(arbuthnot, aes(x=year,y=girls)) + geom_point()`
+
+---
+
+## Back to Arbuthnot
+
+--
+
+We want to learn about Dr. Arbuthnot's findings. What are some ways we can do that?
+
+--
+
+We can view the data by clicking on the data frame in the Global Environment. We can also type `glimpse(arbuthnot)` to see some of the data in the terminal. 
+
+--
+
+We can also plot the data! We have the tools to transform the data to find the proportion of boys to girls each year. What is notable about this?
+
+
+---
+
+## Extending Analysis to Present Day
+
+--
+
+Now we want to run this analysis with US birth data. Please load in the dataset with `data(present)`
+
+--
+
+Please Continue with the lab questions. 
+
+
+
+
+
